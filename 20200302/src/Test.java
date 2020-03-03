@@ -1,9 +1,8 @@
-import java.util.Scanner;
+﻿import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
         do {
-            System.out.println("请输入数字判断奇偶性");
             Scanner num = new Scanner(System.in);
             int num1 = num.nextInt();
             if ((num1 & 1) == 0) {
@@ -14,8 +13,7 @@ public class Test {
             }
         }while(true);
     }
-    public static void main1(String[] args) {
-        //不创建临时变量交换两个变量的值
+    public static void main3(String[] args) {
         int a = 1;
         int b = 2;
         System.out.println("交换前：a=" + a + "," + "b=" + b);
