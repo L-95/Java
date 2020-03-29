@@ -89,4 +89,22 @@ public class List {
         }
         return head.next;
     }
+
+    public Node mergeTwoList(Node n1 , Node n2) {
+        Node newHead = new Node(-1);
+        Node tmp = newHead;
+
+        while ( n1 != null && n2 != null) {
+            if (n1.data < n2.data) {
+                tmp.next = n1;
+                n1 = n1.next;
+            }else {
+                tmp.next = n2;
+                n2 = n2.next;
+            }
+            tmp = tmp.next;
+        }
+        tmp.next = (n1 == null? n2:n1);
+        return newHead.next;
+    }
 }
