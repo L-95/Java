@@ -1,4 +1,4 @@
-
+﻿
 public class LinkedList {
     public ListNode tmpHead = new ListNode(-1);
     public ListNode tmpLast = new ListNode(0);
